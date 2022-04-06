@@ -46,7 +46,7 @@ const Home: NextPage = () => {
     setResults({ totalPrice, data: products })
   }
 
-  const addToWishList = useCallback(() => {
+  const addToWishlist = useCallback(() => {
     async (id: number) => {
 
     }
@@ -68,7 +68,7 @@ const Home: NextPage = () => {
       <SearchResults
         results={results.data}
         totalPrice={results.totalPrice}
-        onAddWichList={addToWishList}
+        onAddWichlist={addToWishlist}
       />
     </div>
   )

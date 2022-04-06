@@ -9,11 +9,11 @@ interface SearchResultsProps {
         priceFormatted: string;
         title: string;
     }>
-    onAddWichList: (id: number) => void
+    onAddWichlist: (id: number) => void
 }
 
 
-export function SearchResults({ results, totalPrice, onAddWichList }: SearchResultsProps) {
+export function SearchResults({ results, totalPrice, onAddWichlist }: SearchResultsProps) {
 
     return (
         <div>
@@ -23,7 +23,7 @@ export function SearchResults({ results, totalPrice, onAddWichList }: SearchResu
                     <ProductItem
                         key={product.id}
                         product={product}
-                        onAddWichList={onAddWichList}
+                        onAddWichlist={onAddWichlist}
                     />
                 )
             })}
