@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { FormEvent, useState } from 'react'
+import { FormEvent, useCallback, useState } from 'react'
 import { SearchResults } from '../components/SearchResults'
 
 
@@ -19,9 +19,11 @@ const Home: NextPage = () => {
     setResults(data)
   }
 
-  async function addToWishList(id: number) {
+  const addToWishList = useCallback(() => {
+    async (id: number) => {
 
-  }
+    }
+  }, [])
 
   return (
     <div>
