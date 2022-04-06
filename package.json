@@ -10,9 +10,11 @@
         "server": "json-server -d 750 -w -p 3333 ./server.js"
     },
     "dependencies": {
+        "@types/react-virtualized": "^9.21.20",
         "next": "12.1.4",
         "react": "18.0.0",
-        "react-dom": "18.0.0"
+        "react-dom": "18.0.0",
+        "react-virtualized": "^9.22.3"
     },
     "devDependencies": {
         "@types/node": "17.0.23",
